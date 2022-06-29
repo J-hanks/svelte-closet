@@ -1,7 +1,8 @@
 <script lang="ts">
 	let available_ui_libraries = [
 		{ value: 'carbon', label: 'Carbon Design System' },
-		{ value: 'material', label: 'Material UI' }
+		{ value: 'material', label: 'Material UI' },
+		{ value: 'daisy', label: 'Daisy UI' },
 	];
 	let selected_ui_libraries = ['carbon'];
 </script>
@@ -53,7 +54,7 @@
 	h1 {
 		padding: 0;
 		color: bisque;
-        margin: 0.7rem;
+        margin:  1rem 0.7rem 1.5rem  ;
 	}
 	header {
 		text-align: center;
@@ -70,18 +71,14 @@
 		font-size: large;
 		background: rgba(0, 0, 0, 0.5);
 		padding: 0.6rem;
-		margin: 0 0.3rem;
+		margin: 5rem 0.3rem;
 		border-radius: 5px;
 	}
 	.ui_option_label.selected {
 		background: rgba(13, 94, 21, 0.8);
 	}
 	.ui_option_label > input {
-		-ms-transform: scale(1.5); /* IE */
-		-moz-transform: scale(1.5); /* FF */
-		-webkit-transform: scale(1.5); /* Safari and Chrome */
-		-o-transform: scale(1.5); /* Opera */
-		transform: scale(1.5);
+	
 		display: none;
 	}
 </style>
