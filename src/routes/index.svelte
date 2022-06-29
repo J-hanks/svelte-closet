@@ -31,7 +31,7 @@
     }
     iframe {
         width: 100%;
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
     }
     footer {
         display: flex;
