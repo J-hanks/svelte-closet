@@ -5,7 +5,7 @@
     <h1>
         Svelte Closet
     </h1>
-    <a href="/carbon" sveltekit:prefetch>Carbon Design Systen</a>
+    <a href="/carbon" sveltekit:prefetch>Carbon Design System</a>
 </header>
 
 <main>
@@ -43,6 +43,9 @@
     header {
         text-align: center;
         font-size: large;
+    }
+    header > a{
+        margin-right: 0.7rem;
     }
     
 </style>
