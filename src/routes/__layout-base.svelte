@@ -9,9 +9,9 @@
 </header>
 
 <main>
-    
-
-	<slot />
+    <iframe src="/carbon">
+	    <!-- <slot /> -->
+    </iframe>
 </main>
 
 <footer>
@@ -27,15 +27,22 @@
     }
     main {
         flex: 1;
+        display: flex;
+    }
+    iframe {
+        width: 100%;
+        margin-top: 0.5rem;
     }
     footer {
         display: flex;
         justify-content: center;
     }
     h1 {
-        padding: 1rem 0;
+        padding: 1rem 0 0.5rem 0;
     }
     header {
         text-align: center;
+        font-size: large;
     }
+    
 </style>

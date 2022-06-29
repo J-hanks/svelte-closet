@@ -11,7 +11,6 @@
 </svelte:head>
 
 	
-    <a href="/carbon" sveltekit:prefetch>Carbon Design Systen</a>
 
 <style>
 	

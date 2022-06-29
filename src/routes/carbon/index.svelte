@@ -1,15 +1,16 @@
 <script lang="ts">
-	import Button from 'carbon-components-svelte/src/Button/Button.svelte';
-
-	let btClick = () => {
-		console.log('btClick');
-	};
+	import { Theme, RadioButtonGroup, RadioButton } from 'carbon-components-svelte';
+	let theme = 'g90';
 </script>
 
 <svelte:head>
 	<title>Svelte Closet - Carbon Design System</title>
 </svelte:head>
+<h1>Welcome</h1>
+<Theme bind:theme />
 
-<Button on:click={btClick}>Primary button</Button>
-
-
+<RadioButtonGroup legendText="Carbon theme" bind:selected={theme}>
+	{#each ['white', 'g10', 'g80', 'g90', 'g100'] as value}
+		<RadioButton labelText={value} {value} />
+	{/each}
+</RadioButtonGroup>
