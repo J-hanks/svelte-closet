@@ -1,8 +1,16 @@
 <script lang="ts">
 </script>
 
+<header>
+    <h1>
+        Svelte Closet
+    </h1>
+    <a href="/carbon" sveltekit:prefetch>Carbon Design Systen</a>
+</header>
 
 <main>
+    
+
 	<slot />
 </main>
 
@@ -23,5 +31,11 @@
     footer {
         display: flex;
         justify-content: center;
+    }
+    h1 {
+        padding: 1rem 0;
+    }
+    header {
+        text-align: center;
     }
 </style>

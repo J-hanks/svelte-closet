@@ -10,12 +10,9 @@
 	<title>Svelte Closet</title>
 </svelte:head>
 
-	<h1>
-		Svelte Closet
-	</h1>
+	
+    <a href="/carbon" sveltekit:prefetch>Carbon Design Systen</a>
 
 <style>
-	h1 {
-        text-align: center;
-    }
+	
 </style>
