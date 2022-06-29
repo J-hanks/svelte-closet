@@ -5,7 +5,9 @@
 		{ value: 'material', label: 'Material' },
 		{ value: 'daisy', label: 'Daisy' }
 	];
-	let selected_ui_libraries = ['carbon'];
+	let selected_ui_libraries = available_ui_libraries.map((value: Object) => {
+        return value.value
+    });
 	let last_selected = 'carbon';
 	$: {
 		if (selected_ui_libraries.length == 0) {
@@ -58,6 +60,8 @@
 		flex: 1;
 		display: flex;
 		flex-direction: row;
+		max-width: 100%;
+
 	}
 	.ui_iframe {
 		width: 100%;
@@ -65,6 +69,8 @@
 	}
 	.iframe_container {
 		width: 100%;
+		max-width: 100%;
+        overflow: hidden;
 		height: 100%;
 	}
 	h1 {
@@ -74,6 +80,8 @@
 		background-color: rgba(255, 255, 255, 0.9);
 		border-radius: 5px;
 		padding: 0.4rem 0.8rem;
+        font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 	}
 	header {
 		text-align: center;
@@ -85,6 +93,7 @@
 		padding-bottom: 1rem;
 		display: flex;
 		flex-direction: column;
+        margin: 0;
 	}
 	.ui_option_label {
 		color: white;
@@ -98,6 +107,7 @@
 		box-shadow: 3px 2px 5px rgba(3, 4, 65, 0.8);
 		transition: all 300ms ease-in;
 		display: inline-block;
+        font-family: 'Courier New', Courier, monospace;
 	}
 	.labels_container {
 		margin: 0.5rem 0.6rem 1rem;
