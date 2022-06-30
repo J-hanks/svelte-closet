@@ -1,5 +1,3 @@
-import { each } from 'svelte/internal';
-
 export const available_ui_libraries = [
 	{ value: 'carbon', label: 'Carbon' },
 	{ value: 'material', label: 'Material' },
