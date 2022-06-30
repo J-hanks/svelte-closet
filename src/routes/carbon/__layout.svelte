@@ -47,15 +47,17 @@
 	</SideNavItems>
 </SideNav>
 
-<Content>
-	<Grid>
-		<Row>
-			<Column>
-				<slot />
-			</Column>
-		</Row>
-	</Grid>
+<Content class="flex-1">
+	<slot />
 </Content>
 
 <style>
+:global(html, body) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
 </style>
