@@ -17,19 +17,18 @@
 		Row,
 		Column
 	} from 'carbon-components-svelte';
+	import { carbon_components } from '$src/stores/main_store';
 
 	let isSideNavOpen = false;
 </script>
 
-<Header company="SVELTE" platformName="CLOSET" bind:isSideNavOpen>
+<Header href="/carbon" target="_top" company="IBM" platformName="Carbon" bind:isSideNavOpen>
 	<svelte:fragment slot="skip-to-content">
 		<SkipToContent />
 	</svelte:fragment>
 	<HeaderNav>
-		<HeaderNavItem href="/" text="Link 1" />
-		<HeaderNavItem href="/" text="Link 2" />
-		<HeaderNavItem href="/" text="Link 3" />
-		<HeaderNavMenu text="Menu">
+		<HeaderNavItem href="/" target="_top" text="Svelte Closet" />
+		<HeaderNavMenu text="UI Libraries">
 			<HeaderNavItem href="/" text="Link 1" />
 			<HeaderNavItem href="/" text="Link 2" />
 			<HeaderNavItem href="/" text="Link 3" />
@@ -40,16 +39,11 @@
 
 <SideNav bind:isOpen={isSideNavOpen}>
 	<SideNavItems>
-		<SideNavLink text="Link 1" />
-		<SideNavLink text="Link 2" />
-		<SideNavLink text="Link 3" />
-		<SideNavMenu text="Menu">
-			<SideNavMenuItem href="/" text="Link 1" />
-			<SideNavMenuItem href="/" text="Link 2" />
-			<SideNavMenuItem href="/" text="Link 3" />
+		<SideNavMenu text="Components">
+			{#each carbon_components as carbon_component}
+				<SideNavMenuItem href="./{carbon_component}" target="_top" text={carbon_component} />
+			{/each}
 		</SideNavMenu>
-		<SideNavDivider />
-		<SideNavLink text="Link 4" />
 	</SideNavItems>
 </SideNav>
 
@@ -57,7 +51,6 @@
 	<Grid>
 		<Row>
 			<Column>
-				
 				<slot />
 			</Column>
 		</Row>

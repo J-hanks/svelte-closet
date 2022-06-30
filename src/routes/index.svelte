@@ -1,10 +1,8 @@
 <script lang="ts">
+    import { available_ui_libraries } from "$src/stores/main_store";
+
+
 	let labels_container;
-	let available_ui_libraries = [
-		{ value: 'carbon', label: 'Carbon' },
-		{ value: 'material', label: 'Material' },
-		{ value: 'daisy', label: 'Daisy' }
-	];
 	let selected_ui_libraries = available_ui_libraries.map(({ value }) => {
 		return value;
 	});

@@ -1,5 +1,6 @@
 <script>
 	import '$src/daisyUI.css';
+    import { daisy_categorized_components } from '$src/stores/main_store';
 	import MenuItems from './lib/MenuItems.svelte';
 </script>
 
