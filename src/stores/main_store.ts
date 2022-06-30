@@ -1,7 +1,8 @@
 export const available_ui_libraries = [
 	{ value: 'carbon', label: 'Carbon' },
+	{ value: 'daisy', label: 'Daisy' },
+	{ value: 'chota', label: 'Chota' },
 	{ value: 'material', label: 'Material' },
-	{ value: 'daisy', label: 'Daisy' }
 ];
 
 export const daisy_categorized_components: {

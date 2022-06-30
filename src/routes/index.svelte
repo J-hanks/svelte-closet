@@ -91,7 +91,7 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0;
-        min-height: 180px;
+        min-height: 165px;
 	}
 	.ui_option_label:hover {
 		background: rgba(13, 14, 90, 0.8);

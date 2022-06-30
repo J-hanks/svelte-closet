@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Theme, RadioButtonGroup, RadioButton } from 'carbon-components-svelte';
-	let theme = 'g90';
+	let theme = "g90";
 </script>
 
 <svelte:head>
