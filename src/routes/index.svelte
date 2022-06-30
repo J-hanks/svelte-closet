@@ -1,44 +1,29 @@
 <script lang="ts">
-	import { available_ui_libraries } from '$src/stores/main_store';
+import ExampleSelector from '$src/lib/ExampleSelector.svelte';
 
-	let labels_container;
+	import LibrarySelector from '$src/lib/LibrarySelector.svelte';
+
+	import { available_examples, available_ui_libraries } from '$src/stores/main_store';
+
+	// select all available ui libraries
+	// is binded to checkbox group
 	let selected_ui_libraries = available_ui_libraries.map(({ value }) => {
 		return value;
 	});
-	let last_selected = 'carbon';
-	$: {
-		if (selected_ui_libraries.length == 0) {
-			selected_ui_libraries = [last_selected];
-		}
-	}
-	let on_select = (event: any) => {
-		last_selected = event.target.value;
-	};
+
+	let selected_example = available_examples[0].value;
+    
 </script>
 
 <header style="">
 	<h1>Svelte Closet</h1>
-	<div class="labels_container flex  flex-row ">
-		{#each available_ui_libraries as ui_library (ui_library.value)}
-			<label
-				class="ui_option_label"
-				class:selected={selected_ui_libraries.includes(ui_library.value)}
-			>
-				<input
-					type="checkbox"
-					on:click={on_select}
-					bind:group={selected_ui_libraries}
-					value={ui_library.value}
-				/>
-				{ui_library.label}
-			</label>
-		{/each}
-	</div>
+	<LibrarySelector bind:selected_ui_libraries />
+    <ExampleSelector bind:selected_example/>
 </header>
 <main>
 	{#each selected_ui_libraries as ui_library, i (ui_library)}
 		<div name={ui_library} class="iframe_container flex-1">
-			<iframe class="ui_iframe" title="UI_IFRAME" src="/{ui_library}">
+			<iframe class="ui_iframe" title="UI_IFRAME" src="/{ui_library}/{selected_example}">
 				<slot />
 			</iframe>
 		</div>
@@ -70,11 +55,12 @@
 		overflow: hidden;
 		height: 100%;
 	}
+
 	h1 {
 		padding: 0;
 		color: rgb(90, 17, 100);
-		margin: 1rem auto;
-		background-color: rgba(255, 255, 255, 0.9);
+		margin: 0.2rem auto;
+		/* background-color: rgba(255, 255, 255, 0.9); */
 		border-radius: 5px;
 		padding: 0.4rem 0.8rem;
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
@@ -83,7 +69,8 @@
 	header {
 		text-align: center;
 		font-size: larger;
-		background-image: url('/closet.jpg');
+        background-color: antiquewhite;
+		/* background-image: url('/closet.jpg'); */
 		background-position: center;
 		background-size: 70%;
 		padding-top: 1rem;
@@ -91,42 +78,6 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0;
-        min-height: 165px;
-	}
-	.ui_option_label:hover {
-		background: rgba(13, 14, 90, 0.8);
-		box-shadow: 3px 2px 5px rgba(29, 30, 108, 0.8);
-		font-size: larger;
-	}
-	.ui_option_label {
-		color: white;
-		font-weight: bold;
-		font-size: large;
-		background: rgba(3, 4, 65, 0.8);
-		padding: 0.6rem;
-		margin: 0rem 0.6rem;
-		border-radius: 5px;
-		border: 1px solid rgb(3, 4, 65);
-		box-shadow: 3px 2px 5px rgba(3, 4, 65, 0.8);
-		transition: all 250ms ease-in;
-		display: inline-block;
-		font-family: 'Courier New', Courier, monospace;
-	}
-	.labels_container {
-		margin: 0.5rem 0.6rem 1rem;
-	}
-	.ui_option_label.selected {
-		background: rgba(13, 94, 21, 0.8);
-		box-shadow: 3px 2px 5px green;
-		border-color: green;
-	}
-	.ui_option_label.selected:hover {
-		background: rgba(255, 0, 0, 0.7);
-		box-shadow: 3px 2px 5px rgb(255, 61, 61);
-		border-color: rgb(255, 61, 61);
-	}
-
-	.ui_option_label > input {
-		display: none;
+		min-height: 165px;
 	}
 </style>

@@ -5,6 +5,12 @@ export const available_ui_libraries = [
 	{ value: 'material', label: 'Material' },
 ];
 
+export const available_examples = [
+	{ value: '', label: 'Welcome' },
+	{ value: 'buttons', label: 'Buttons' },
+]
+
+
 export const daisy_categorized_components: {
 	[key: string]: string[];
 } = {
