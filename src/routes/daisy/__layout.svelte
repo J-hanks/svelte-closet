@@ -1,7 +1,7 @@
 <script>
 	import '$src/daisyUI.css';
     import { daisy_categorized_components } from '$src/stores/main_store';
-	import MenuItems from './lib/MenuItems.svelte';
+	import MenuItems from '../../lib/daisy/MenuItems.svelte';
 </script>
 
 <div class="navbar bg-base-100">
@@ -54,4 +54,8 @@
 		padding: 0;
 		margin: 0;
 	}
+    .daisy-content{
+        padding: 30px 2rem;
+    }
+
 </style>

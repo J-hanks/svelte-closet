@@ -1,7 +1,7 @@
 <script lang="ts">
-import ExampleSelector from '$src/lib/ExampleSelector.svelte';
+	import ExampleSelector from '$src/lib/index/ExampleSelector.svelte';
 
-	import LibrarySelector from '$src/lib/LibrarySelector.svelte';
+	import LibrarySelector from '$src/lib/index/LibrarySelector.svelte';
 
 	import { available_examples, available_ui_libraries } from '$src/stores/main_store';
 
@@ -12,13 +12,12 @@ import ExampleSelector from '$src/lib/ExampleSelector.svelte';
 	});
 
 	let selected_example = available_examples[0].value;
-    
 </script>
 
 <header style="">
 	<h1>Svelte Closet</h1>
 	<LibrarySelector bind:selected_ui_libraries />
-    <ExampleSelector bind:selected_example/>
+	<ExampleSelector bind:selected_example />
 </header>
 <main>
 	{#each selected_ui_libraries as ui_library, i (ui_library)}
@@ -69,7 +68,7 @@ import ExampleSelector from '$src/lib/ExampleSelector.svelte';
 	header {
 		text-align: center;
 		font-size: larger;
-        background-color: antiquewhite;
+		background-color: antiquewhite;
 		/* background-image: url('/closet.jpg'); */
 		background-position: center;
 		background-size: 70%;
