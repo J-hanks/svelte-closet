@@ -18,11 +18,11 @@
 				<Input password value="password" />
 			</Field>
 		</div>
-        <div class="flex-item-field-container">
+		<div class="flex-item-field-container">
 			<Field label="Disabled">
-        <Input disabled value="Disabled"/>
-    </Field>
-</div>
+				<Input disabled value="Disabled" />
+			</Field>
+		</div>
 	</div>
 	<h3>Number</h3>
 	<div class="flex-item-field-container">
@@ -30,7 +30,7 @@
 			<Input number value="password" />
 		</Field>
 	</div>
-	<h3>Date</h3>
+	<h3>DateTime</h3>
 	<div class="flex-item-field-container">
 		<Field label="Date">
 			<Input date value="2022-07-01" />
@@ -38,12 +38,12 @@
 	</div>
 	<h3>Select</h3>
 	<div class="flex-item-field-container">
-        <select style="margin-right: 2rem;">
-		<option disabled selected>Choose an Option</option>
-		<option value="1">One</option>
-		<option value="2">Two</option>
-		<option value="3">Three</option>
-	</select>
+		<select style="margin-right: 2rem;">
+			<option disabled selected>Choose an Option</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
 	</div>
 	<h3>Radio</h3>
 	<Radio value="first" bind:group={radiovalue}>First</Radio>
