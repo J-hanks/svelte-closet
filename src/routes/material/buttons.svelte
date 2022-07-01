@@ -1,12 +1,8 @@
 <script type="ts">
+
 	import Button, { Label, Icon } from '@smui/button';
-	import type { MenuComponentDev } from '@smui/menu';
 
-	let clicked = 0;
-	let menu: MenuComponentDev;
-	let menu2: MenuComponentDev;
-
-    let button_margin_bottom = ".8rem"
+	let button_margin_bottom = '.8rem';
 </script>
 
 <svelte:head>
@@ -52,11 +48,11 @@
 
 	<h3 class="">Icon buttons</h3>
 
-	<Button style="margin-bottom: {button_margin_bottom};" variant="raised" >
+	<Button style="margin-bottom: {button_margin_bottom};" variant="raised">
 		<Icon class="material-icons">favorite</Icon>
 		<Label>Leading Icon</Label>
 	</Button>
-	<Button style="margin-bottom: {button_margin_bottom};" >
+	<Button style="margin-bottom: {button_margin_bottom};">
 		<Label>Trailing Icon</Label>
 		<Icon class="material-icons">favorite</Icon>
 	</Button>
@@ -64,7 +60,7 @@
 		<Icon class="material-icons">favorite</Icon>
 		<Label>Leading Icon</Label>
 	</Button>
-	<Button style="margin-bottom: {button_margin_bottom};" color="secondary" >
+	<Button style="margin-bottom: {button_margin_bottom};" color="secondary">
 		<Label>Trailing Icon</Label>
 		<Icon class="material-icons">favorite</Icon>
 	</Button>
@@ -77,6 +73,7 @@
 	<hr />
 
 	<h3 class="">Dropdown button</h3>
+
 </div>
 
 <style>
