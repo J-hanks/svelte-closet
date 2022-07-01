@@ -39,8 +39,9 @@
 
 		<hr />
 		<h3>States</h3>
-		<Button style="margin: 0.5rem 0" disabled>Disabled button</Button>
+		<Button style="margin-bottom: 0.5rem " disabled>Disabled button</Button>
 		<Button skeleton />
+		<hr />
 		<h3>Dropdown button</h3>
 	</div>
 </div>
@@ -56,4 +57,8 @@
 		margin-top: 2rem;
 		margin-bottom: 0.5rem;
 	}
+    hr {
+        margin-top: .7rem;
+    }
+
 </style>

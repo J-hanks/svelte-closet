@@ -20,7 +20,7 @@
         <a class="active" href="/">Link 1</a>
     </div>
 
-    <a slot="center" href="/" class="brand">LOGO</a>
+    <a slot="center" target="_blank" href="https://alexxnb.github.io/svelte-chota/" class="brand">Chota</a>
 
     <div slot="right" style="display: flex;">
         <a href="/">Link 3</a>

@@ -29,7 +29,7 @@
 			<MenuItems/>
         </ul>
 		</div>
-		<a href="/" class="btn btn-ghost normal-case text-xl">daisyUI</a>
+		<a href="https://daisyui.com/" class="btn btn-ghost normal-case text-xl">daisyUI</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal p-0">

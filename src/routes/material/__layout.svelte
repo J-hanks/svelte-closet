@@ -23,7 +23,11 @@
 	<Row>
 		<Section>
 			<IconButton class="material-icons">menu</IconButton>
-			<Title>Fixed</Title>
+			<Title>
+				<Button href="https://sveltematerialui.com/" target="_blank" variant="unelevated">
+					<Label>Material UI</Label>
+				</Button>
+			</Title>
 		</Section>
 		<Section align="end" toolbar>
 			<IconButton class="material-icons" aria-label="Download">file_download</IconButton>
@@ -41,8 +45,9 @@
 </AutoAdjust>
 
 <main>
-<slot></slot>
+	<slot />
 </main>
+
 <style>
 	:global(html, body) {
 		height: 100%;
@@ -50,13 +55,12 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		padding: 0;
-        margin: 0;
+		margin: 0;
 	}
-    main {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        padding: 0 2rem;
-    }
-
+	main {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		padding: 0 2rem;
+	}
 </style>

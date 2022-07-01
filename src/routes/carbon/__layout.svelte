@@ -22,7 +22,7 @@
 	let isSideNavOpen = false;
 </script>
 
-<Header href="/carbon" target="_top" company="IBM" platformName="Carbon" bind:isSideNavOpen>
+<Header href="https://carbon-components-svelte.onrender.com/" target="_blank" company="IBM" platformName="Carbon" bind:isSideNavOpen>
 	<svelte:fragment slot="skip-to-content">
 		<SkipToContent />
 	</svelte:fragment>
