@@ -27,7 +27,7 @@
     </div>
 </Nav>
 
-<main>
+<main class="bg-light">
     <slot />
 </main>
 
@@ -44,8 +44,7 @@
         display: flex;
         justify-content: center;
         flex: 1;
-        padding-top: 30px;
-        padding-bottom: 200px;
+        padding: 30px 2rem;
         /* align-items: center; */
     }
     :global(:root) {
