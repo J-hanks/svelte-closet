@@ -8,6 +8,7 @@ export const available_ui_libraries = [
 export const available_examples = [
 	{ value: '', label: 'Welcome' },
 	{ value: 'buttons', label: 'Buttons' },
+	{ value: 'form', label: 'Form' },
 ]
 
 
