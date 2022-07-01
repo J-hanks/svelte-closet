@@ -57,18 +57,21 @@
 
 	h1 {
 		padding: 0;
-		color: rgb(90, 17, 100);
+		color: white;
 		margin: 0.2rem auto;
 		/* background-color: rgba(255, 255, 255, 0.9); */
 		border-radius: 5px;
 		padding: 0.4rem 0.8rem;
-		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-			Geneva, Verdana, sans-serif;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 5px 5px 10px black;
+        /* font-weight: bolder; */
+        
+			
 	}
 	header {
 		text-align: center;
 		font-size: larger;
-		background-color: antiquewhite;
+		background-color: purple;
 		/* background-image: url('/closet.jpg'); */
 		background-position: center;
 		background-size: 70%;

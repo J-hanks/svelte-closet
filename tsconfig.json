@@ -9,9 +9,11 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-        "target": "esnext",
-        "paths": {
-            "$src/*": ["src/*"],
-        }
-    },
+		"target": "esnext",
+		"paths": {
+			"$src/*": ["src/*"],
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"]
+		}
+	}
 }

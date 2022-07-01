@@ -34,9 +34,11 @@
 
 <style>
 	.ui_option_label:hover {
-		background: rgba(13, 14, 90, 0.8);
-		box-shadow: 3px 2px 5px rgba(29, 30, 108, 0.8);
-		font-size: larger;
+		background: rgba(20, 102, 143, 0.8);
+		box-shadow: 3px 2px 5px rgba(20, 102, 143, 0.9);
+		border: 1px solid rgba(20, 102, 143, 0.8);
+        padding: 0.7rem;
+		/* font-size: larger; */
 	}
 	.ui_option_label {
 		color: white;
@@ -44,7 +46,7 @@
 		font-size: large;
 		background: rgba(3, 4, 65, 0.8);
 		padding: 0.6rem;
-		margin: 0rem 0.6rem;
+		margin: 0.5rem 0.6rem;
 		border-radius: 5px;
 		border: 1px solid rgb(3, 4, 65);
 		box-shadow: 3px 2px 5px rgba(3, 4, 65, 0.8);

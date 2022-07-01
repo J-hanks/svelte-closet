@@ -39,7 +39,7 @@
 
 		<hr />
 		<h3>States</h3>
-		<Button disabled>Disabled button</Button>
+		<Button style="margin: 0.5rem 0" disabled>Disabled button</Button>
 		<Button skeleton />
 		<h3>Dropdown button</h3>
 	</div>

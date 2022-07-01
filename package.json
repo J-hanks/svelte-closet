@@ -18,7 +18,10 @@
 	"devDependencies": {
 		"@mdi/js": "^6.9.96",
 		"@playwright/test": "^1.22.2",
+		"@smui/button": "^6.0.0-beta.16",
 		"@smui/icon-button": "^6.0.0-beta.16",
+		"@smui/list": "^6.0.0-beta.16",
+		"@smui/menu": "^6.0.0-beta.16",
 		"@smui/top-app-bar": "^6.0.0-beta.16",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
